@@ -1,0 +1,21 @@
+{
+  "name": "dis",
+  "version": "0.0.0",
+  "description": "Redis client with pooled connections and promises",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jerome Gravel-Niquet",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "~0.8.4",
+    "hiredis": "~0.1.15",
+    "generic-pool": "~2.0.4",
+    "q": "~0.9.6"
+  },
+  "devDependencies": {
+    "sinon": "~1.7.3",
+    "mocha": "~1.12.0"
+  }
+}
