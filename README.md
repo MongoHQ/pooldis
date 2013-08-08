@@ -27,11 +27,19 @@ In the form of `redis://user:password@hostname:port` (`user:password` and `port`
 
 #### Options
 
-- `hostname` (String) - represents the redis server hostname to connect to.
-- `port` (Number) - represents the redis server port to connect to.
-- `password` (String) - if auth is required.
+- `options.hostname` (String) - represents the redis server hostname to connect to.
+- `options.port` (Number) - represents the redis server port to connect to.
+- `options.password` (String) - if auth is required.
 
 Any other options usually accepted by [node_redis](https://github.com/mranney/node_redis) will be passed along.
+
+##### Pool options
+
+Any of these in `options.pool` will be passed along to [node-pool](https://github.com/coopernurse/node-pool).
+
+- `options.pool.max` (Number) - maximum number of acquirable connections.
+- `options.pool.min` (Number) - minimum number of connections to hold.
+- `options.pool.idleTimeoutMillis` (Number) - time in milliseconds before releasing a idle connection
 
 ### Commands
 
