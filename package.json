@@ -2,6 +2,7 @@
   "name": "dis",
   "version": "0.1",
   "description": "Redis client with pooled connections and promises",
+  "keywords": ["redis", "promises", "pool"],
   "repository": {
     "type": "git",
     "url": "http://github.com/MongoHQ/Dis.git"
