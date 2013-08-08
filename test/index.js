@@ -4,14 +4,9 @@ var Dis = require("../lib"),
 
 describe("Dis", function(){
   describe("instantiation", function(){
-    describe("without arguments", function(){
-      var dis;
-      before(function(){
-        dis = new Dis()
-      });
-      it("uses default settings", function(){
-        assert(dis instanceof Dis)
-      });
+    it("without arguments uses default settings", function(){
+      var dis = new Dis
+      assert(dis instanceof Dis)
     });
   });
 });
