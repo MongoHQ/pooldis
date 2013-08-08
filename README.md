@@ -2,6 +2,11 @@
 
 A redis client with pooled connections and promises.
 
+## Known issues
+
+- Don't use `subscribe` with it just yet. That needs to use a client apart from the pool. It hasn't been programmed in yet.
+- Virtually no tests.
+
 ## Usage
 
 `npm install dis`

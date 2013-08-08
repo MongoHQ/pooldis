@@ -1,7 +1,11 @@
 {
   "name": "dis",
-  "version": "0.0.0",
+  "version": "0.1",
   "description": "Redis client with pooled connections and promises",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/MongoHQ/Dis.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
