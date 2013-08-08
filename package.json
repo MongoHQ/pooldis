@@ -1,6 +1,6 @@
 {
-  "name": "dis",
-  "version": "0.1",
+  "name": "dis-redis",
+  "version": "0.1.0",
   "description": "Redis client with pooled connections and promises",
   "keywords": ["redis", "promises", "pool"],
   "repository": {

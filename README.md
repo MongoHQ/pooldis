@@ -9,10 +9,10 @@ A redis client with pooled connections and promises.
 
 ## Usage
 
-`npm install dis`
+`npm install dis-redis`
 
 ```javascript
-var Dis = require("dis");
+var Dis = require("dis-redis");
 var dis = new Dis(); // more on that below...
 
 dis.get("some:key").then(callback, errorHandler) // .then() ... and so on.
