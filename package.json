@@ -2,7 +2,11 @@
   "name": "pooldis",
   "version": "0.1.1",
   "description": "Redis client with pooled connections and promises",
-  "keywords": ["redis", "promises", "pool"],
+  "keywords": [
+    "redis",
+    "promises",
+    "pool"
+  ],
   "repository": {
     "type": "git",
     "url": "http://github.com/MongoHQ/pooldis.git"
@@ -17,7 +21,8 @@
     "redis": "~0.8.4",
     "hiredis": "~0.1.15",
     "generic-pool": "~2.0.4",
-    "q": "~0.9.6"
+    "q": "~0.9.6",
+    "debug": "~0.7.2"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
