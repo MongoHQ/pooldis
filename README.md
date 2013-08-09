@@ -1,4 +1,4 @@
-# Dis
+# pooldis
 
 A redis client with pooled connections and promises.
 
@@ -9,19 +9,19 @@ A redis client with pooled connections and promises.
 
 ## Usage
 
-`npm install dis-redis`
+`npm install pooldis`
 
 ```javascript
-var Dis = require("dis-redis");
-var dis = new Dis(); // more on that below...
+var Pooldis = require("pooldis");
+var redis = new Pooldis(); // more on that below...
 
-dis.get("some:key").then(callback, errorHandler) // .then() ... and so on.
+redis.get("some:key").then(callback, errorHandler) // .then() ... and so on.
 ```
 
 ### Instantiation
 
 ```javascript
-var Dis = function(url, options) { /*...*/ }
+var Pooldis = function(url, options) { /*...*/ }
 ```
 
 Either pass a valid redis `url` string, an `options` object or both.
@@ -55,9 +55,9 @@ Executing redis commands uses the same syntax as [node_redis](https://github.com
 Dis uses [Q](https://github.com/kriskowal/q) as its promises implementation. Here's how it works:
 
 ```javascript
-var dis = new Dis()
+var redis = new Pooldis()
 
-dis.get("some:key")
+redis.get("some:key")
 .then(function(value){
   // Do something with `value`
 }, function(error){

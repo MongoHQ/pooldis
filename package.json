@@ -1,11 +1,11 @@
 {
-  "name": "dis-redis",
+  "name": "pooldis",
   "version": "0.1.0",
   "description": "Redis client with pooled connections and promises",
   "keywords": ["redis", "promises", "pool"],
   "repository": {
     "type": "git",
-    "url": "http://github.com/MongoHQ/Dis.git"
+    "url": "http://github.com/MongoHQ/pooldis.git"
   },
   "main": "lib/index.js",
   "scripts": {
