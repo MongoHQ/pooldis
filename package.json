@@ -1,6 +1,6 @@
 {
   "name": "pooldis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Redis client with pooled connections and promises",
   "keywords": ["redis", "promises", "pool"],
   "repository": {
