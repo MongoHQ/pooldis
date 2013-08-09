@@ -1,12 +1,12 @@
-var Dis = require("../lib"),
+var Pooldis = require("../lib"),
     assert = require("assert"),
     sinon = require("sinon");
 
-describe("Dis", function(){
+describe("Pooldis", function(){
   describe("instantiation", function(){
     it("without arguments uses default settings", function(){
-      var dis = new Dis
-      assert(dis instanceof Dis)
+      var redis = new Pooldis
+      assert(redis instanceof Pooldis)
     });
   });
 });
