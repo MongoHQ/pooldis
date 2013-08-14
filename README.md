@@ -5,6 +5,7 @@ A redis client with pooled connections and promises.
 ## Known issues
 
 - Virtually no tests.
+- Not sure about `MULTI` and `WATCH` yet.
 
 ## Usage
 
