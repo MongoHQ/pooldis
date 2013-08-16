@@ -22,7 +22,8 @@
     "hiredis": "~0.1.15",
     "generic-pool": "~2.0.4",
     "q": "~0.9.6",
-    "debug": "~0.7.2"
+    "debug": "~0.7.2",
+    "underscore": "~1.5.1"
   },
   "devDependencies": {
     "sinon": "~1.7.3",
