@@ -1,10 +1,29 @@
 # pooldis
 
-A redis client with pooled connections and promises.
+'dis be the most refreshing redis driver under the sun.
+
+## Why
+
+Pipelining is not always the speedy-fast solution. We use pipelining when the time complexity of an operation is O(1); otherwise, we use a dynamic pool of redis connections.
+
+Promises allow a more natural way for a developer to handle results from redis. If you don't like promises... you can use callbacks too. We went the extra mile.
+
+Manually setting up a second redis connection to handle pubsub subscriptions has been endured for too long. We handle this for you, like a good driver.
+
+Setting up redis over a secure socket shouldn't be a hack (and I've done this hack). We just need a cloneable socket-like object to get going, but we'll accept a uri too.
+
+## Why ditch pipelining? 
+
+FIFO
+
+With pipelining, the redis client is free to write multiple commands to redis before receiving any response, but the server must respond first-in-first-out. So, if I put a slow command in front of a fast command... my would-be fast command is now slow.
+
+We can avoid putting fast commands behind slow ones by running time-consuming commands on their own available private connection to redis. Once the command finishes, the connection returns to the pool.
 
 ## Known issues
 
 - Virtually no tests.
+- A new and unhardened driver
 
 ## Usage
 
